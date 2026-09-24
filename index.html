@@ -1,190 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samosir Eco-Lodge & Cultural Village - Digital E-Brochure</title>
+  <title>Samosir Eco-Lodge & Cultural Sanctuary | Lake Toba</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+    .font-serif-title { font-family: 'Cinzel', serif; }
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .bg-emerald-gradient { background: linear-gradient(135deg, #064e3b 0%, #022c22 100%); }
-    .text-gold { color: #f59e0b; }
-    .bg-gold { background-color: #f59e0b; }
+    .bg-hero {
+      background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.8)), 
+                  url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2000&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body class="bg-stone-50 text-stone-800 antialiased">
+
+  <!-- NAVIGATION BAR -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-stone-900/80 backdrop-blur-md border-b border-stone-800 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="font-serif-title text-xl font-bold tracking-wider text-amber-400 flex items-center gap-2">
+        <i class="fa-solid fa-leaf text-emerald-500"></i> SAMOSIR ECO-LODGE
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+        <a href="#about" class="hover:text-amber-400 transition-colors">About</a>
+        <a href="#villas" class="hover:text-amber-400 transition-colors">Villas & Cottages</a>
+        <a href="#experiences" class="hover:text-amber-400 transition-colors">Experiences</a>
+        <a href="#gallery" class="hover:text-amber-400 transition-colors">Gallery</a>
+        <a href="#book" class="bg-amber-500 hover:bg-amber-600 text-stone-900 font-bold px-5 py-2.5 rounded-full transition-all shadow-md">Book Your Stay</a>
+      </div>
+    </div>
+  </nav>
 
   <!-- HERO SECTION -->
-  <header class="relative bg-emerald-gradient text-white overflow-hidden py-20 px-6 sm:px-12 text-center shadow-xl">
-    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
-    <div class="relative max-w-4xl mx-auto">
-      <span class="inline-block px-4 py-1.5 rounded-full bg-amber-500/20 text-amber-300 font-semibold text-xs tracking-widest uppercase mb-4 border border-amber-500/30">
-        Eco-Hospitality & Cultural Sanctuary
+  <section class="relative min-h-screen bg-hero flex items-center justify-center text-center text-white px-6 pt-20">
+    <div class="max-w-4xl mx-auto space-y-6">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 font-semibold text-xs uppercase tracking-widest border border-emerald-500/30 backdrop-blur-md">
+        Authentic Batak Eco-Hospitality
       </span>
-      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4">
-        Samosir Eco-Lodge
+      <h1 class="font-serif-title text-4xl md:text-7xl font-bold tracking-tight text-amber-100 drop-shadow-lg">
+        Horas! Welcome to Samosir Eco-Lodge
       </h1>
-      <p class="text-xl sm:text-2xl font-light text-emerald-100 italic mb-6">
-        "Horas! Where Lake Toba's beauty meets timeless Batak heritage."
+      <p class="text-lg md:text-2xl text-stone-200 font-light italic max-w-2xl mx-auto">
+        Where Lake Toba's breathtaking natural sanctuary meets the rich, ancient heritage of Batak culture.
       </p>
-      <div class="flex flex-wrap justify-center gap-4 text-sm font-medium">
-        <a href="#script" class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-6 py-3 rounded-xl transition-all shadow-lg hover:shadow-amber-500/20">
-          <i class="fa-solid fa-book-open mr-2"></i> Read E-Brochure
+      <div class="pt-6 flex flex-wrap justify-center gap-4">
+        <a href="#book" class="bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold px-8 py-4 rounded-full text-base transition-all shadow-xl hover:scale-105">
+          Reserve Your Luxury Cottage
         </a>
-        <a href="#vocabulary" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-3 rounded-xl backdrop-blur-md transition-all">
-          <i class="fa-solid fa-leaf mr-2"></i> Cultural & Eco Terms
-        </a>
-        <a href="#matrix" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-3 rounded-xl backdrop-blur-md transition-all">
-          <i class="fa-solid fa-diagram-project mr-2"></i> Analysis Matrix
+        <a href="#about" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md px-8 py-4 rounded-full text-base transition-all">
+          Discover Our Story
         </a>
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- MAIN CONTAINER -->
-  <main class="max-w-6xl mx-auto px-4 py-12 space-y-16">
+  <!-- ABOUT & HERITAGE SECTION -->
+  <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6">
+        <span class="text-xs font-bold text-emerald-700 tracking-widest uppercase">Cultural Harmony & Sustainability</span>
+        <h2 class="font-serif-title text-3xl md:text-5xl font-bold text-stone-900 leading-tight">
+          A Sustainable Sanctuary Built on Tradition
+        </h2>
+        <p class="text-stone-600 leading-relaxed">
+          Nestled along the serene shores of Lake Toba, our lodge is built using authentic <strong>Ruma Bolon</strong> architectural concepts. These traditional Batak stilt houses naturally maximize cross-ventilation, keeping your rooms cool and peaceful while reducing energy usage.
+        </p>
+        <p class="text-stone-600 leading-relaxed">
+          We strictly adhere to <strong>Marsialap Ari</strong>—a cherished Batak philosophy of mutual community cooperation. By working alongside local villagers, we run organic gardens, offer zero-waste dining, and protect the pristine environment of Samosir Island.
+        </p>
+        <div class="grid grid-cols-2 gap-4 pt-4">
+          <div class="border-l-2 border-amber-500 pl-4">
+            <h4 class="font-bold text-stone-900 text-lg">100% Organic</h4>
+            <p class="text-xs text-stone-500">Farm-to-table culinary ingredients sourced locally.</p>
+          </div>
+          <div class="border-l-2 border-emerald-600 pl-4">
+            <h4 class="font-bold text-stone-900 text-lg">Zero Single-Use Plastic</h4>
+            <p class="text-xs text-stone-500">Eco-tableware & bamboo crafts used throughout.</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000&auto=format&fit=crop" alt="Eco Lodge Lake Toba" class="rounded-3xl shadow-2xl w-full object-cover h-[500px]">
+        <div class="absolute -bottom-6 -left-6 bg-stone-900 text-amber-400 p-6 rounded-2xl shadow-xl hidden sm:block max-w-xs border border-stone-800">
+          <p class="font-serif-title text-2xl font-bold">Ruma Bolon</p>
+          <p class="text-xs text-stone-300 mt-1">Indigenous Batak architecture naturally integrated into eco-luxury hospitality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- SECTION 1: BROCHURE CONTENT / SCRIPT -->
-    <section id="script" class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200">
-      <div class="flex items-center space-x-3 mb-8 pb-4 border-b border-slate-100">
-        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-xl font-bold">1</div>
+  <!-- VILLAS & ACCOMMODATION -->
+  <section id="villas" class="py-24 bg-stone-100 px-6">
+    <div class="max-w-7xl mx-auto space-y-16">
+      <div class="text-center space-y-4 max-w-2xl mx-auto">
+        <span class="text-xs font-bold text-amber-600 tracking-widest uppercase">Stay In Nature</span>
+        <h2 class="font-serif-title text-3xl md:text-5xl font-bold text-stone-900">Eco-Friendly Villas & Suites</h2>
+        <p class="text-stone-600">Wake up to breathtaking morning mist over Lake Toba and the soothing sounds of nature.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Villa 1 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-stone-200 flex flex-col group hover:-translate-y-2 transition-all duration-300">
+          <div class="relative overflow-hidden h-64">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000&auto=format&fit=crop" alt="Lakeview Ruma Suite" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-4 right-4 bg-stone-900/80 backdrop-blur-md text-amber-400 font-bold px-3 py-1 rounded-full text-xs">Lakeview</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif-title text-xl font-bold text-stone-900 mb-2">Lakeview Ruma Suite</h3>
+              <p class="text-xs text-stone-500 mb-4">King Bed • Private Terrace • Panoramic Lake Toba Views</p>
+              <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                Designed with handcrafted wooden finishes and floor-to-ceiling windows overlooking the calm waters of Lake Toba.
+              </p>
+            </div>
+            <div class="flex items-center justify-between border-t pt-4">
+              <div>
+                <span class="text-xs text-stone-400">Starting from</span>
+                <p class="text-lg font-bold text-emerald-800">$120 <span class="text-xs font-normal text-stone-500">/ night</span></p>
+              </div>
+              <a href="#book" class="bg-stone-900 hover:bg-amber-500 hover:text-stone-900 text-white font-semibold text-xs px-4 py-2.5 rounded-xl transition-colors">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Villa 2 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-stone-200 flex flex-col group hover:-translate-y-2 transition-all duration-300">
+          <div class="relative overflow-hidden h-64">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1000&auto=format&fit=crop" alt="Heritage Cottage" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-4 right-4 bg-stone-900/80 backdrop-blur-md text-amber-400 font-bold px-3 py-1 rounded-full text-xs">Cultural Heritage</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif-title text-xl font-bold text-stone-900 mb-2">Heritage Batak Cottage</h3>
+              <p class="text-xs text-stone-500 mb-4">Queen Bed • Organic Bamboo Decor • Garden View</p>
+              <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                Constructed with bamboo and recycled timber, offering an immersive indigenous stay surrounded by organic botanical gardens.
+              </p>
+            </div>
+            <div class="flex items-center justify-between border-t pt-4">
+              <div>
+                <span class="text-xs text-stone-400">Starting from</span>
+                <p class="text-lg font-bold text-emerald-800">$95 <span class="text-xs font-normal text-stone-500">/ night</span></p>
+              </div>
+              <a href="#book" class="bg-stone-900 hover:bg-amber-500 hover:text-stone-900 text-white font-semibold text-xs px-4 py-2.5 rounded-xl transition-colors">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Villa 3 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-stone-200 flex flex-col group hover:-translate-y-2 transition-all duration-300">
+          <div class="relative overflow-hidden h-64">
+            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=1000&auto=format&fit=crop" alt="Samosir Sanctuary Villa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <span class="absolute top-4 right-4 bg-stone-900/80 backdrop-blur-md text-amber-400 font-bold px-3 py-1 rounded-full text-xs">Family Villa</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif-title text-xl font-bold text-stone-900 mb-2">Samosir Sanctuary Villa</h3>
+              <p class="text-xs text-stone-500 mb-4">2 Bedrooms • Private Balcony • Sunset Spot</p>
+              <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                Perfect for families or groups, featuring traditional Ulos interior accents, outdoor lounge space, and sunset lake views.
+              </p>
+            </div>
+            <div class="flex items-center justify-between border-t pt-4">
+              <div>
+                <span class="text-xs text-stone-400">Starting from</span>
+                <p class="text-lg font-bold text-emerald-800">$180 <span class="text-xs font-normal text-stone-500">/ night</span></p>
+              </div>
+              <a href="#book" class="bg-stone-900 hover:bg-amber-500 hover:text-stone-900 text-white font-semibold text-xs px-4 py-2.5 rounded-xl transition-colors">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCES & CULTURAL HIGHLIGHTS -->
+  <section id="experiences" class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="text-center space-y-4 max-w-2xl mx-auto mb-16">
+      <span class="text-xs font-bold text-emerald-700 tracking-widest uppercase">Immersive Activities</span>
+      <h2 class="font-serif-title text-3xl md:text-5xl font-bold text-stone-900">Unforgettable Local Experiences</h2>
+      <p class="text-stone-600">Connect deeply with Batak culture and the pristine natural surroundings of Samosir Island.</p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="p-6 rounded-2xl bg-stone-900 text-white space-y-4 hover:border-amber-400 border border-transparent transition-all">
+        <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold">
+          <i class="fa-solid fa-mug-hot"></i>
+        </div>
+        <h3 class="font-bold text-lg">Organic Coffee Ritual</h3>
+        <p class="text-xs text-stone-400 leading-relaxed">
+          Enjoy freshly roasted Mandheling coffee served in sustainable bamboo cups while enjoying sunrise over the lake.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-stone-900 text-white space-y-4 hover:border-amber-400 border border-transparent transition-all">
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl font-bold">
+          <i class="fa-solid fa-[#000] fa-scroll"></i>
+        </div>
+        <h3 class="font-bold text-lg">Ulos Weaving Workshop</h3>
+        <p class="text-xs text-stone-400 leading-relaxed">
+          Learn the art of handweaving sacred Batak Ulos textiles using eco-friendly natural botanical dyes.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-stone-900 text-white space-y-4 hover:border-amber-400 border border-transparent transition-all">
+        <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold">
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+        <h3 class="font-bold text-lg">Authentic Culinary</h3>
+        <p class="text-xs text-stone-400 leading-relaxed">
+          Savor traditional dishes seasoned with local Andaliman pepper, harvested directly from our community farm.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-stone-900 text-white space-y-4 hover:border-amber-400 border border-transparent transition-all">
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl font-bold">
+          <i class="fa-solid fa-water"></i>
+        </div>
+        <h3 class="font-bold text-lg">Eco Lake Kayaking</h3>
+        <p class="text-xs text-stone-400 leading-relaxed">
+          Paddle through the silent crystal waters of Lake Toba on zero-emission eco kayaks.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section id="gallery" class="py-24 bg-stone-900 text-white px-6">
+    <div class="max-w-7xl mx-auto space-y-12">
+      <div class="text-center space-y-4">
+        <span class="text-xs font-bold text-amber-400 tracking-widest uppercase">Visual Journey</span>
+        <h2 class="font-serif-title text-3xl md:text-5xl font-bold">Samosir Eco-Lodge Gallery</h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=800&auto=format&fit=crop" class="rounded-2xl w-full h-64 object-cover hover:opacity-90 transition-opacity">
+        <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=800&auto=format&fit=crop" class="rounded-2xl w-full h-64 object-cover hover:opacity-90 transition-opacity">
+        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=800&auto=format&fit=crop" class="rounded-2xl w-full h-64 object-cover hover:opacity-90 transition-opacity">
+        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=800&auto=format&fit=crop" class="rounded-2xl w-full h-64 object-cover hover:opacity-90 transition-opacity">
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM SECTION -->
+  <section id="book" class="py-24 px-6 max-w-4xl mx-auto">
+    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-stone-200 space-y-8">
+      <div class="text-center space-y-2">
+        <span class="text-xs font-bold text-emerald-700 tracking-widest uppercase">Plan Your Visit</span>
+        <h2 class="font-serif-title text-3xl font-bold text-stone-900">Reserve Your Eco Sanctuary</h2>
+        <p class="text-sm text-stone-500">Book your eco-friendly cottage today and take part in preserving North Sumatra's natural beauty.</p>
+      </div>
+
+      <form onsubmit="event.preventDefault(); alert('Horas! Thank you for your reservation query. Our team will contact you shortly.');" class="grid md:grid-cols-2 gap-6">
         <div>
-          <h2 class="text-2xl font-bold text-slate-900">E-Brochure Content & Script</h2>
-          <p class="text-xs text-slate-500">Official promotional transcript for Samosir Eco-Lodge</p>
+          <label class="block text-xs font-bold uppercase text-stone-600 mb-2">Full Name</label>
+          <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm">
         </div>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <!-- Card 1 -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-emerald-200 transition-all">
-          <div class="text-xs font-bold text-amber-600 uppercase mb-2">Introduction</div>
-          <p class="text-slate-700 leading-relaxed font-medium">
-            <span class="text-2xl font-bold text-emerald-800">"Horas!</span> Welcome to Samosir Eco-Lodge, where the majestic beauty of Lake Toba meets the timeless heritage of Batak culture."
-          </p>
-        </div>
-        <!-- Card 2 -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-emerald-200 transition-all">
-          <div class="text-xs font-bold text-emerald-600 uppercase mb-2">Architecture & Sustainability</div>
-          <p class="text-slate-700 leading-relaxed text-sm">
-            Nestled along the serene shores of Lake Toba, our lodge is built using authentic <strong>Ruma Bolon</strong> architectural concepts, designed to naturally maximize ventilation while honoring ancestors. We strictly adhere to <strong>Marsialap Ari</strong>, a tradition of community mutual assistance, working alongside local villagers to maintain organic gardens and zero-waste hospitality.
-          </p>
-        </div>
-        <!-- Card 3 -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-emerald-200 transition-all">
-          <div class="text-xs font-bold text-emerald-600 uppercase mb-2">Guest Experience & CTA</div>
-          <p class="text-slate-700 leading-relaxed text-sm">
-            Experience genuine Batak warmth with us! Enjoy your morning coffee served in locally sourced bamboo cups while wearing a handwoven <strong>Ulos</strong> shawl. Book your stay today and take part in preserving North Sumatra's natural sanctuary! Don't miss out—reserve your eco-friendly cottage now!
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 2: VOCABULARY NOTES -->
-    <section id="vocabulary" class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200">
-      <div class="flex items-center space-x-3 mb-8 pb-4 border-b border-slate-100">
-        <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl font-bold">2</div>
         <div>
-          <h2 class="text-2xl font-bold text-slate-900">Vocabulary Notes</h2>
-          <p class="text-xs text-slate-500">Key cultural and ecological terminology used in the project</p>
+          <label class="block text-xs font-bold uppercase text-stone-600 mb-2">Email Address</label>
+          <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm">
         </div>
-      </div>
-
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="p-5 rounded-2xl border border-slate-200 bg-emerald-50/50">
-          <h3 class="font-bold text-emerald-900 text-lg">1. Horas</h3>
-          <p class="text-xs text-emerald-700 font-semibold mb-2">Greeting / Cultural Value</p>
-          <p class="text-sm text-slate-600">A traditional Batak greeting expressing warmth, blessing, peace, and good health to visitors upon arrival.</p>
-        </div>
-
-        <div class="p-5 rounded-2xl border border-slate-200 bg-emerald-50/50">
-          <h3 class="font-bold text-emerald-900 text-lg">2. Ruma Bolon</h3>
-          <p class="text-xs text-emerald-700 font-semibold mb-2">Indigenous Architecture</p>
-          <p class="text-sm text-slate-600">Traditional Batak stilt house featuring curved roofs and natural wood ventilation systems that eliminate artificial cooling needs.</p>
-        </div>
-
-        <div class="p-5 rounded-2xl border border-slate-200 bg-emerald-50/50">
-          <h3 class="font-bold text-emerald-900 text-lg">3. Marsialap Ari</h3>
-          <p class="text-xs text-emerald-700 font-semibold mb-2">Social / Eco-Philosophy</p>
-          <p class="text-sm text-slate-600">A traditional Batak value of mutual cooperation applied in community-driven eco-hospitality and organic farming.</p>
-        </div>
-
-        <div class="p-5 rounded-2xl border border-slate-200 bg-emerald-50/50">
-          <h3 class="font-bold text-emerald-900 text-lg">4. Ulos</h3>
-          <p class="text-xs text-emerald-700 font-semibold mb-2">Sustainable Textile</p>
-          <p class="text-sm text-slate-600">Sacred handwoven Batak textile symbolizing respect and warmth, made using natural plant dyes and eco-crafting methods.</p>
-        </div>
-
-        <div class="p-5 rounded-2xl border border-slate-200 bg-emerald-50/50 sm:col-span-2 lg:col-span-2">
-          <h3 class="font-bold text-emerald-900 text-lg">5. Zero-Waste Hospitality</h3>
-          <p class="text-xs text-emerald-700 font-semibold mb-2">Ecological Practice</p>
-          <p class="text-sm text-slate-600">An eco-friendly lodging framework focusing on elimination of single-use plastics, active composting, and utilizing natural organic tableware like bamboo cups.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 3: JAKOBSON'S SELF-ANALYSIS MATRIX -->
-    <section id="matrix" class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200 overflow-hidden">
-      <div class="flex items-center space-x-3 mb-8 pb-4 border-b border-slate-100">
-        <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-800 flex items-center justify-center text-xl font-bold">3</div>
         <div>
-          <h2 class="text-2xl font-bold text-slate-900">Communicative Functions Matrix</h2>
-          <p class="text-xs text-slate-500">Linguistic self-analysis based on Roman Jakobson's theory</p>
+          <label class="block text-xs font-bold uppercase text-stone-600 mb-2">Select Villa / Room</label>
+          <select class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm">
+            <option>Lakeview Ruma Suite</option>
+            <option>Heritage Batak Cottage</option>
+            <option>Samosir Sanctuary Villa</option>
+          </select>
         </div>
-      </div>
-
-      <div class="overflow-x-auto">
-        <table class="w-full text-left border-collapse text-sm">
-          <thead>
-            <tr class="bg-slate-100 text-slate-700 uppercase text-xs font-bold">
-              <th class="p-4 rounded-l-xl">Excerpt from Script</th>
-              <th class="p-4">Communicative Function</th>
-              <th class="p-4">Indigenous / Eco Aspect</th>
-              <th class="p-4 rounded-r-xl">Expected Audience Reaction</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-slate-100">
-            <tr class="hover:bg-slate-50">
-              <td class="p-4 font-medium italic text-emerald-900">"Horas! Welcome to Samosir Eco-Lodge..."</td>
-              <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-800">Phatic</span></td>
-              <td class="p-4 text-slate-600">Traditional Batak greeting (*Horas*)</td>
-              <td class="p-4 text-slate-600">International guests feel warmly welcomed & respected.</td>
-            </tr>
-            <tr class="hover:bg-slate-50">
-              <td class="p-4 font-medium italic text-emerald-900">"Our lodge is built using authentic Ruma Bolon architectural concepts..."</td>
-              <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">Referential</span></td>
-              <td class="p-4 text-slate-600">*Ruma Bolon* passive-cooling eco-architecture</td>
-              <td class="p-4 text-slate-600">Audience gains factual knowledge about sustainable design.</td>
-            </tr>
-            <tr class="hover:bg-slate-50">
-              <td class="p-4 font-medium italic text-emerald-900">"We strictly adhere to Marsialap Ari... working alongside local villagers."</td>
-              <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-purple-100 text-purple-800">Emotive / Referential</span></td>
-              <td class="p-4 text-slate-600">*Marsialap Ari* mutual assistance philosophy</td>
-              <td class="p-4 text-slate-600">Guests appreciate the community-driven social responsibility.</td>
-            </tr>
-            <tr class="hover:bg-slate-50">
-              <td class="p-4 font-medium italic text-emerald-900">"Enjoy your morning coffee served in bamboo cups while wearing a handwoven Ulos..."</td>
-              <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-pink-100 text-pink-800">Poetic</span></td>
-              <td class="p-4 text-slate-600">Natural tableware & traditional *Ulos* weaving</td>
-              <td class="p-4 text-slate-600">Target audience feels inspired by the sensory cultural experience.</td>
-            </tr>
-            <tr class="hover:bg-slate-50">
-              <td class="p-4 font-medium italic text-emerald-900">"Book your stay today... Reserve your eco-friendly cottage now!"</td>
-              <td class="p-4"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">Conative</span></td>
-              <td class="p-4 text-slate-600">Sustainable tourism reservation call</td>
-              <td class="p-4 text-slate-600">Tourists are prompted to act and reserve a stay.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-  </main>
+        <div>
+          <label class="block text-xs font-bold uppercase text-stone-600 mb-2">Check-In Date</label>
+          <input type="date" required class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm">
+        </div>
+        <div class="md:col-span-2">
+          <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold py-4 rounded-xl text-base transition-all shadow-lg">
+            Confirm Reservation & Get Quote
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-900 text-slate-400 py-8 text-center text-xs border-t border-slate-800">
-    <p>© 2026 Samosir Eco-Lodge Digital E-Brochure | Industry-Based Hospitality Project</p>
+  <footer class="bg-stone-950 text-stone-400 py-12 px-6 border-t border-stone-900 text-center text-sm space-y-4">
+    <a href="#" class="font-serif-title text-xl font-bold tracking-wider text-amber-400 inline-block">
+      SAMOSIR ECO-LODGE
+    </a>
+    <p class="max-w-md mx-auto text-xs text-stone-500">
+      Samosir Island, Lake Toba, North Sumatra, Indonesia. Dedicated to eco-hospitality and indigenous Batak heritage preservation.
+    </p>
+    <p class="text-xs text-stone-600 pt-4">© 2026 Samosir Eco-Lodge E-Brochure Project. All rights reserved.</p>
   </footer>
 
 </body>
